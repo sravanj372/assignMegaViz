@@ -82,8 +82,10 @@ const BlogList: React.FC = () => {
               onClick={() => dispatch(selectBlog(blog.id))}
               sx={{
                 borderBottom: '1px solid #e0e0e0',
+                transition: 'transform 0.2s ease, box-shadow 0.2s ease',
                 '&:hover': {
-                  backgroundColor: '#f0f7ff',
+                  transform: 'scale(1.02)',
+                  boxShadow: '0 4px 8px rgba(25, 118, 210, 0.3)', // subtle blue shadow
                 },
               }}
             >
